@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TutorTek - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Animations */
+    .fade-in { animation: fadeIn 1s ease-in-out; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    /* Smooth progress bar animation */
+    .progress-bar {
+      transition: width 0.5s ease-in-out;
+    }
+    /* Footer Style */
+    footer {
+      background-color: #0d6efd;
+      color: white;
+      padding: 20px 0;
+    }
+    footer a { color: #f8f9fa; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="fade-in">
+
+  <!-- Dashboard Icon -->
+  <a href="#dashboardModal" data-bs-toggle="modal" class="dashboard-icon btn btn-primary rounded-circle position-fixed d-flex align-items-center justify-content-center" style="top:20px; right:20px; width:56px; height:56px;">
+    <i class="bi bi-person fs-2"></i>
+  </a>
+
+  <!-- Banner Section -->
+  <div class="container mt-4">
+    <div class="jumbotron p-5 bg-primary text-white rounded-3 mb-4 fade-in">
+      <h1>Welcome to TutorTek</h1>
+      <p>Your one-stop platform for quality education.</p>
+      <a href="#courses" class="btn btn-light">Explore Courses</a>
+    </div>
+  </div>
+
+  <!-- Courses Section -->
+  <div id="courses" class="container mt-4">
+    <h2 class="mb-4">Featured Courses</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\OneDrive\Documents\Pharmacology\graphicdesign.jpg" class="card-img-top" alt="Graphic Design">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design Course- Basic To Advance</h5>
+            <p class="card-text">Understand the core concepts of Graphic Design from scratch.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal1">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\OneDrive\Documents\Pharmacology\videoediting.jpg" class="card-img-top" alt="Video Editing">
+          <div class="card-body">
+            <h5 class="card-title">Video Editing Course - Basic To Advance</h5>
+            <p class="card-text">Dive into the amazing world of video editing.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\Downloads\dropss.jpg" class="card-img-top" alt="Drop Shipping">
+          <div class="card-body">
+            <h5 class="card-title">Drop Shipping Course- Basic To Advance</h5>
+            <p class="card-text">Dive into the amazing world of video editing.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\Downloads\Affi.jpg" class="card-img-top" alt="Affiliate Marketing">
+          <div class="card-body">
+            <h5 class="card-title">Affiliate Marketing Course - Basic To Advance</h5>
+            <p class="card-text">Dive into the amazing world of video editing.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal2">View Details</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\Downloads\animation.jpg" class="card-img-top" alt="Animation Course">
+          <div class="card-body">
+            <h5 class="card-title">Animation Course - Basic To Advance</h5>
+            <p class="card-text">Dive into the amazing world of video editing.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal2">View Details</button>
+          </div>
+	 
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="C:\Users\SHIVRAJ DESAI\OneDrive\Documents\Pharmacology\freelance.jpg" class="card-img-top" alt="Freelancing">
+          <div class="card-body">
+            <h5 class="card-title">Freelancing Course - Basic To Advance</h5>
+            <p class="card-text">Learn how to earn online with freelancing.</p>
+            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#courseModal3">View Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Contact Us -->
+  <div id="contact" class="container mt-5 mb-5">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+      <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+      <textarea class="form-control mb-2" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </div>
+
+<!-- About Us -->
+  <div id="about" class="container mt-5">
+    <h2>About Us</h2>
+    <p>At TutorTek, we are passionate about making quality education accessible to everyone. Our mission is to empower students with skills for the future through engaging courses and personalized learning experiences.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 TutorTek. All Rights Reserved.</p>
+    <p>
+      <a href="#about">About Us</a> | 
+      <a href="#contact">Contact</a> | 
+      <a href="#courses">Courses</a>
+    </p>
+  </footer>
+
+  <!-- Login/Signup Modal -->
+  <div class="modal fade" id="authModal" tabindex="-1">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Login / Signup</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <input type="text" id="loginUser" class="form-control mb-2" placeholder="Username" required>
+            <input type="password" id="loginPass" class="form-control mb-2" placeholder="Password" required>
+            <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+          </form>
+          <hr>
+          <form id="signupForm">
+            <input type="text" id="signupUser" class="form-control mb-2" placeholder="Username" required>
+            <input type="email" id="signupEmail" class="form-control mb-2" placeholder="Email" required>
+            <input type="password" id="signupPass" class="form-control mb-2" placeholder="Password" required>
+            <button type="submit" class="btn btn-success w-100">Signup</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS CDN (for modal functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Show Login/Signup modal on page load
+    window.addEventListener('DOMContentLoaded', function() {
+      var authModal = new bootstrap.Modal(document.getElementById('authModal'));
+      authModal.show();
+    });
+  </script>
+
+  <!-- Course Modals with Animated Progress Bars -->
+  <div class="modal fade" id="courseModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Graphic Design Course</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Learn the fundamentals of graphic design...</p>
+          <label>Progress:</label>
+          <div class="progress mb-3">
+            <div id="progress1" class="progress-bar bg-success" role="progressbar">0%</div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-outline-primary" onclick="updateProgress(1, 10)">+10%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(1, 20)">+20%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(1, 50)">+50%</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="courseModal2" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Video Editing Course</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Master the art of video editing...</p>
+          <label>Progress:</label>
+          <div class="progress mb-3">
+            <div id="progress2" class="progress-bar bg-info" role="progressbar">0%</div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-outline-primary" onclick="updateProgress(2, 10)">+10%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(2, 20)">+20%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(2, 50)">+50%</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="courseModal3" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5>Freelancing Course</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Learn how to start and grow your freelancing career...</p>
+          <label>Progress:</label>
+          <div class="progress mb-3">
+            <div id="progress3" class="progress-bar bg-warning" role="progressbar">0%</div>
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-outline-primary" onclick="updateProgress(3, 10)">+10%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(3, 20)">+20%</button>
+            <button class="btn btn-outline-primary" onclick="updateProgress(3, 50)">+50%</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Login/Signup
+    document.getElementById('signupForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      localStorage.setItem('username', document.getElementById('signupUser').value);
+      localStorage.setItem('password', document.getElementById('signupPass').value);
+      alert('Signup successful!');
+    });
+
+    document.getElementById('loginForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      if(document.getElementById('loginUser').value === localStorage.getItem('username') &&
+         document.getElementById('loginPass').value === localStorage.getItem('password')){
+         alert('Login successful!');
+         bootstrap.Modal.getInstance(document.getElementById('authModal')).hide();
+      } else {
+         alert('Invalid credentials');
+      }
+    });
+
+    // Progress functionality
+    function updateProgress(course, value){
+      let current = parseInt(localStorage.getItem('progress'+course) || 0);
+      let newVal = Math.min(100, current + value);
+      localStorage.setItem('progress'+course, newVal);
+      let bar = document.getElementById('progress'+course);
+      bar.style.width = newVal + '%';
+      bar.innerText = newVal + '%';
+    }
+
+    // Load progress when modal opens
+    document.querySelectorAll('[id^=courseModal]').forEach(modal => {
+      modal.addEventListener('show.bs.modal', () => {
+        let id = modal.id.replace('courseModal','');
+        let progress = localStorage.getItem('progress'+id) || 0;
+        let bar = document.getElementById('progress'+id);
+        bar.style.width = progress + '%';
+        bar.innerText = progress + '%';
+      });
+    });
+  </script>
+</body>
+</html>
